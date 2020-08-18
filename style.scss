@@ -1,21 +1,74 @@
 $font-stack : arial, sans-serif;
 $blue : #42c5f5;
+$grey :#7a7a7a;
+$greyback :#f2f2f2;
 
 %flex {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 %item_flex {
     margin: 0px 10px 10px 10px;
+}
+
+body{
+    margin-left: 0px;
+    margin-right: 0px;
 }
 header {
     position: static;
 }
 .navbar {
     @extend %flex;
-    position: relative;
-    left: 80%;
 }
 .item_navbar{
     @extend %item_flex;
+    a {
+        text-decoration: none;
+        color: $grey;
+    }
+    a:hover{
+        color: $blue;
+    }
+    a:visited{
+        color: $blue;
+    }
 }
+.main {
+    @extend %flex;
+    position: relative;
+    top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .gambar{
+        margin: 10px;
+    }
+}
+.form1{
+    position: relative;
+    img{
+        height: 20px;
+        position: absolute;
+        left:10px;
+        top:15px;
+    }
+}
+#searchform{
+        width: 500px;
+        border-radius: 24px;
+        border: solid $grey 1px;
+        padding-left: 40px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+}
+footer{
+    background: $greyback;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+

@@ -1,19 +1,70 @@
-.navbar {
+.main, .navbar {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row-reverse;
 }
 
 .item_navbar {
   margin: 0px 10px 10px 10px;
 }
 
+body {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 header {
   position: static;
 }
 
-.navbar {
+.item_navbar a {
+  text-decoration: none;
+  color: #7a7a7a;
+}
+.item_navbar a:hover {
+  color: #42c5f5;
+}
+.item_navbar a:visited {
+  color: #42c5f5;
+}
+
+.main {
   position: relative;
-  left: 80%;
+  top: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .gambar {
+  margin: 10px;
+}
+
+.form1 {
+  position: relative;
+}
+.form1 img {
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+
+#searchform {
+  width: 500px;
+  border-radius: 24px;
+  border: solid #7a7a7a 1px;
+  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+footer {
+  background: #f2f2f2;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
