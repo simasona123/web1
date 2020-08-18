@@ -3,6 +3,9 @@ $blue : #42c5f5;
 $grey :#7a7a7a;
 $greyback :#f2f2f2;
 
+input[type="text"]{
+    font-size: 120%;
+}
 %flex {
     display: flex;
     flex-wrap: wrap;
@@ -62,7 +65,14 @@ header {
         padding-left: 40px;
         padding-top: 15px;
         padding-bottom: 15px;
+        &:hover {
+            box-shadow: 10px 10px $greyback;
+        }
+        &:focus{
+            box-shadow: 10px 10px $greyback;
+        }
 }
+
 footer{
     background: $greyback;
     margin-left: 0px;
@@ -71,4 +81,17 @@ footer{
     bottom: 0px;
     width: 100%;
 }
-
+.button{
+    margin-top: 10px;
+    @extend %flex;
+    flex-direction: row;
+    justify-content: center;
+    div{
+        margin:10px;
+        input{
+            background: $greyback;
+            padding: 10px;
+            width: 150px;
+        }
+    }
+}
