@@ -1,0 +1,21 @@
+$font-stack : arial, sans-serif;
+$blue : #42c5f5;
+
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+%item_flex {
+    margin: 0px 10px 10px 10px;
+}
+header {
+    position: static;
+}
+.navbar {
+    @extend %flex;
+    position: relative;
+    left: 80%;
+}
+.item_navbar{
+    @extend %item_flex;
+}

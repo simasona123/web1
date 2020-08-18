@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item_navbar {
+  margin: 0px 10px 10px 10px;
+}
+
+header {
+  position: static;
+}
+
+.navbar {
+  position: relative;
+  left: 80%;
+}
+
+/*# sourceMappingURL=style.css.map */
