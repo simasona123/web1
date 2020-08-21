@@ -1,0 +1,72 @@
+$font-stack : arial, sans-serif;
+$greyback :#f2f2f2;
+
+body {
+    margin:0 0 0 0;
+}
+header{
+    background: $greyback;
+    margin-top: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
+    img{
+        position: absolute;
+        left: 5px;
+        top: 20px;
+
+        width: 120px;
+    }
+    div {
+        margin-left: 10px;
+        margin-right:  10px;
+        position:relative;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+h1 {
+    margin-left: 30px;
+    color: red;
+    font-family: $font-stack;
+    font-weight: normal;
+}
+.batas{
+    background: $greyback;
+    padding: 2px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    .flex_item{
+        margin:10px;
+        display: grid;
+        grid-template-columns: 300px 500px auto;
+        grid-column-gap: 0;
+        input[type="text"]{
+            width: 80%;
+            &:focus{
+                border: 1px solid blue;
+            }
+        }
+        input[type="number"]{
+            width: 34%;
+            &:focus{
+                border: 1px solid blue;
+            }
+        }
+    }
+}
+footer{
+    background: $greyback;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}

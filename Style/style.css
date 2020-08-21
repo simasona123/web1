@@ -12,6 +12,13 @@ input[type=text] {
   margin: 0px 10px 10px 10px;
 }
 
+.button input[type=submit] {
+  border: none;
+}
+.button input[type=submit]:hover {
+  border: 1px solid black;
+}
+
 body {
   margin-left: 0px;
   margin-right: 0px;
